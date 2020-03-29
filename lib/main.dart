@@ -57,8 +57,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
 
-    double offsetZero = _accelerometerValueX < 2 ? (_accelerometerValueX > -2 ? _accelerometerValueX: -2) : 2;
-    offsetZero = offsetZero * (-1);
+    double offset = _accelerometerValueX < 2 ? (_accelerometerValueX > -2 ? _accelerometerValueX: -2) : 2;
+    offset = offset * (-1);
 
     return Scaffold(
       body: Stack(
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
               fit: BoxFit.fitHeight,
               width: double.infinity,
               height: double.infinity,
-              alignment: Alignment(0 + (offsetZero/5), 0),
+              alignment: Alignment(offset/5, 0),
             ),
           ),
           Container(
@@ -88,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
               fit: BoxFit.fitHeight,
               width: double.infinity,
               height: double.infinity,
-              alignment: Alignment(0 + (offsetZero/30), 0),
+              alignment: Alignment(offset/30, 0),
             ),
           ),
           Center(
