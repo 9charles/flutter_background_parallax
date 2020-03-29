@@ -1,4 +1,4 @@
-# flutterbackgroundparallax
+# Flutter background parallax demo
 
 A Example Parallax Background Flutter application.
 
